@@ -1,0 +1,15 @@
+﻿<Window x:Class="SemaforoAutomatico.MainWindow"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Semaforo" Height="503.787" Width="317.866">
+    <Grid HorizontalAlignment="Left" Width="310">
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="441" Margin="40,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="225"/>
+        <Ellipse x:Name="ellipseVerde" Fill="Black" HorizontalAlignment="Left" Height="100" Margin="104,44,0,0" Stroke="Black" VerticalAlignment="Top" Width="100"/>
+        <Ellipse x:Name="ellipseAmarillo" Fill="Black" HorizontalAlignment="Left" Height="100" Margin="104,161,0,0" Stroke="Black" VerticalAlignment="Top" Width="100"/>
+        <Ellipse x:Name="ellipseRojo" Fill="Black" HorizontalAlignment="Left" Height="100" Margin="104,276,0,0" Stroke="Black" VerticalAlignment="Top" Width="100"/>
+        <Ellipse x:Name="ellipseConectado" Fill="Black" HorizontalAlignment="Left" Height="41" Margin="134,391,0,0" Stroke="Black" VerticalAlignment="Top" Width="43" RenderTransformOrigin="-0.149,0.636"/>
+        <Button x:Name="btnConectar" Content="CONECTAR" HorizontalAlignment="Left" Margin="108,17,0,0" VerticalAlignment="Top" Width="89" Click="Button_Click"/>
+    </Grid>
+</Window>
+
+    
