@@ -30,6 +30,7 @@ namespace SemaforoAutomatico
             InitializeComponent();
             tiempo.Interval = TimeSpan.FromMilliseconds(1000);  /* --- CADA SEGUNDO --- */
             tiempo.Tick += new EventHandler(tiempo_Tick);
+            
         }
 
         void tiempo_Tick(object sender, EventArgs e)
@@ -49,14 +50,40 @@ namespace SemaforoAutomatico
                 case 0:
                     ellipseVerde.Fill = Brushes.Green;
                     puerto.Write("g");
+                    ellipseRojo.Fill = Brushes.Black;
+                    puerto.Write("d");
                     break;
                 case 2:
                     ellipseVerde.Fill = Brushes.Black;
                     puerto.Write("b");
                     break;
+                case 3:
+                    ellipseVerde.Fill = Brushes.Green;
+                    puerto.Write("g");
+                    break;
+                case 4:
+                    ellipseVerde.Fill = Brushes.Black;
+                    puerto.Write("b");
+                    break;
+                case 5:
+                    ellipseVerde.Fill = Brushes.Green;
+                    puerto.Write("g");
+                    break;
+                case 6:
+                    ellipseVerde.Fill = Brushes.Black;
+                    puerto.Write("b");
+                    ellipseAmarillo.Fill = Brushes.Yellow;
+                    puerto.Write("y");
+                    break;
+                case 8:
+                    ellipseAmarillo.Fill = Brushes.Black;
+                    puerto.Write("c");
+                    ellipseRojo.Fill = Brushes.Red;
+                    puerto.Write("r");
+                    break;
             }
             contador++;
-            if (contador > 3)
+            if (contador > 10)
             {
                 contador = 0; /* --- SE REESTABLECE EL CONTADOR --- */
             }
@@ -73,6 +100,8 @@ namespace SemaforoAutomatico
             }
             else
             {
+                Apaga();
+                contador = 0;
                 puerto.Close();
                 ellipseConectado.Fill = Brushes.Black;
                 btnConectar.Content = "CONECTAR";
@@ -98,14 +127,23 @@ namespace SemaforoAutomatico
             }
             else if (datos == "0")  /* --- SE ABRE EL CIRCUITO --- */
             {
-                tiempo.Stop();
+                
                 contador = 0;
-                puerto.Write("b");
-                ellipseVerde.Fill = Brushes.Black;
+                Apaga();
                 ellipseConectado.Fill = Brushes.OrangeRed;
             }
 
             datos = "";
+        }
+        void Apaga()
+        {
+            tiempo.Stop();
+            ellipseVerde.Fill = Brushes.Black;
+            ellipseAmarillo.Fill = Brushes.Black;
+            ellipseRojo.Fill = Brushes.Black;
+            puerto.Write("b");
+            puerto.Write("c");
+            puerto.Write("d");
         }
 
     }

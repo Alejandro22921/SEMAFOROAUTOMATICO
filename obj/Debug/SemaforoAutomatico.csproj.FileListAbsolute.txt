@@ -11,3 +11,16 @@ c:\users\aleja\Documents\Visual Studio 2013\Projects\SemaforoAutomatico\Semaforo
 c:\users\aleja\Documents\Visual Studio 2013\Projects\SemaforoAutomatico\SemaforoAutomatico\bin\Debug\SemaforoAutomatico.pdb
 c:\users\aleja\Documents\Visual Studio 2013\Projects\SemaforoAutomatico\SemaforoAutomatico\obj\Debug\SemaforoAutomatico.exe
 c:\users\aleja\Documents\Visual Studio 2013\Projects\SemaforoAutomatico\SemaforoAutomatico\obj\Debug\SemaforoAutomatico.pdb
+C:\Users\B6-JU\Documents\GitHub\SEMAFOROAUTOMATICO\bin\Debug\SemaforoAutomatico.exe.config
+C:\Users\B6-JU\Documents\GitHub\SEMAFOROAUTOMATICO\obj\Debug\SemaforoAutomatico.exe
+C:\Users\B6-JU\Documents\GitHub\SEMAFOROAUTOMATICO\obj\Debug\SemaforoAutomatico.pdb
+C:\Users\B6-JU\Documents\GitHub\SEMAFOROAUTOMATICO\bin\Debug\SemaforoAutomatico.exe
+C:\Users\B6-JU\Documents\GitHub\SEMAFOROAUTOMATICO\bin\Debug\SemaforoAutomatico.pdb
+C:\Users\B6-JU\Documents\GitHub\SEMAFOROAUTOMATICO\obj\Debug\SemaforoAutomatico.csprojResolveAssemblyReference.cache
+C:\Users\B6-JU\Documents\GitHub\SEMAFOROAUTOMATICO\obj\Debug\MainWindow.baml
+C:\Users\B6-JU\Documents\GitHub\SEMAFOROAUTOMATICO\obj\Debug\MainWindow.g.cs
+C:\Users\B6-JU\Documents\GitHub\SEMAFOROAUTOMATICO\obj\Debug\App.g.cs
+C:\Users\B6-JU\Documents\GitHub\SEMAFOROAUTOMATICO\obj\Debug\SemaforoAutomatico_MarkupCompile.cache
+C:\Users\B6-JU\Documents\GitHub\SEMAFOROAUTOMATICO\obj\Debug\SemaforoAutomatico.g.resources
+C:\Users\B6-JU\Documents\GitHub\SEMAFOROAUTOMATICO\obj\Debug\SemaforoAutomatico.Properties.Resources.resources
+C:\Users\B6-JU\Documents\GitHub\SEMAFOROAUTOMATICO\obj\Debug\SemaforoAutomatico.csproj.GenerateResource.Cache
